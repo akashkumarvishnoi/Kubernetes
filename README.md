@@ -1,0 +1,15 @@
+# Kubernetes
+apiVersion: v1
+kind: pod
+metadata: 
+labels:
+    run: my-first-pod
+    name: my-first-pod
+spec:
+  containers:
+  - image: nginx
+    name: my-first-pod
+    resources: {}
+  dnsPolicy: ClusterFirst
+  restartPolicy: Always
+status: {}
